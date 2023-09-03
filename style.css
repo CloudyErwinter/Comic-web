@@ -20,21 +20,6 @@ nav ul {
   list-style: none;
   align-items: center;
 }
-/* .text {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-around;
-  
-  height: 55px;
-  text-size-adjust: 50%;
-}  */
-/* .image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 55px;
-    margin-inline-end: initial;
-} */
 
 li {
   margin: 0 20px;
@@ -50,20 +35,6 @@ a:hover {
   color: rgb(75, 73, 73);
 }
 
-/* .logo {
-/* .logo {
-  list-style-type: none;
-  justify-content: right;
-  margin-inline-end: 30%;
-}
-.logo img {
-  width: 39px;
-  border-radius: 50%;
-  height: auto;
-  margin: 0px;
-  left: 0px;
-  right: 50px;
-} */
 
 /* Style dasar untuk dropdown */
 .dropdown {
@@ -169,7 +140,7 @@ body {
   transform: scale(0);
 }
 .menu-toggle input:checked ~ span:nth-child(4) {
-  transform: rotate(-45deg) translate(-1px, 3px);
+  transform: rotate(-45deg) translate(2px, 1px);
   background-color: white;
 }
 
@@ -263,13 +234,12 @@ body {
 /* slideshow */
 .slide {
   overflow: hidden;
-  
+  z-index: -1;
 }
 .slide img {
   position: relative;
   width: 100%;
   height: 100%;
-  margin-top: 5%;
   left: 0;
 }
 
