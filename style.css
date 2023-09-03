@@ -1,23 +1,33 @@
 * {
-  margin: auto;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
 }
 
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+/* navbar  */
 nav {
   background-color: black;
   display: flex;
+  justify-content: space-around;
   height: 50px;
 }
 
-.text {
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+/* .text {
   list-style-type: none;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  
   height: 55px;
-  margin-inline-start: initial;
   text-size-adjust: 50%;
-} */
+}  */
 /* .image {
     display: flex;
     justify-content: center;
@@ -220,8 +230,9 @@ body {
   width: auto;
   display: flex;
   cursor: pointer;
-  padding: 14px 30px;
+  padding: 9px 25px;
   border-radius: 50px;
+  margin-top: 6px;
 }
 
 .box input {
