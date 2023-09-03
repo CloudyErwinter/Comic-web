@@ -9,28 +9,39 @@
     <title>Home</title>
 </head>
 <body>
-    <nav>
+<nav>
+    <div class="menu-toggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
     <ul class="text">
         <li><a href="#">Home</a></li>
         <li><a href="#">Updated</a></li>
         <li><a href="#">Hot Manga</a></li>
         <li><a href="#">Genre</a></li>
     </ul>
-    <div class="dropdown">
+    
+    <div class="box">
+        <input class="sc" type="text" placeholder="search..." id="search">
+        <a href="#"><i class="fa-solid fa-magnifying-glass" for="search"></i></a>
+    </div>
+    <!-- <div class="dropdown">
         <button id="dropdown-button" class="dropdown-button"><img class="img" src="img/profile.png" alt="" srcset=""></button>
         <div id="dropdown-content" class="dropdown-content">
         <a href="#">Login</a>
         <a href="#">Sign in</a>
         </div>
-    </div>
-
-    <div class="box">
-        <input class="sc" type="text" placeholder="search..." />
-        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-    </div>
-
+    </div> -->
+    <div class="dropdown-box"><img class="dropdown-logo" src="img/profile.png" alt="" ></div>
+    <ul class="dropdown">
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Sign up</a></li>
+    </ul>
     
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
     <!-- <li class="logo"><a href="#"><i class="bi bi-person-fill"></i></a></li> -->
 </nav>
     <div class="slidershow middle">
