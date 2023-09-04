@@ -1,10 +1,9 @@
 * {
   margin: 0;
   padding: 0;
-}
 
-body {
-  font-family: "Noto Sans", sans-serif;
+  font-family: cursive;
+  box-sizing: border-box;
 }
 
 /* navbar  */
@@ -174,63 +173,6 @@ a:hover {
   background-color: white;
 }
 
-/* responsif break point */
-
-/* ukuran tablet */
-@media screen and (max-width: 768px) {
-  nav ul {
-    width: 50%;
-  }
-  .dropdown {
-    display: none;
-  }
-}
-/* ukuran penyesuaian */
-@media screen and (max-width: 695px) {
-  .menu-toggle {
-    display: flex;
-  }
-  nav ul {
-    position: absolute;
-    left: -70px;
-    top: 0;
-    width: 80%;
-    height: 100vh;
-    flex-direction: column;
-    margin-left: 10%;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: black;
-    z-index: -1;
-    transform: translateX(-500px);
-    transition: all 1s;
-  }
-  nav ul.slide {
-    transform: translateX(0);
-  }
-}
-/* ukuran mobile */
-@media screen and (max-width: 576px) {
-  .menu-toggle {
-    display: flex;
-  }
-  nav ul.slide {
-    transform: translateX(0);
-  }
-}
-/* ukuran laptop opsional */
-@media screen and (max-width: 1500px) {
-  .dropdown-content {
-    display: none;
-  }
-  .box {
-    margin-right: 9px;
-    margin-left: 9px;
-  }
-  .menu-toggle {
-    margin-left: 15px;
-  }
-}
 
 /* search */
 
@@ -318,5 +260,91 @@ a:hover {
   margin: 6px;
   cursor: pointer;
 }
+/* item */
+.flex-container {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  margin-top: 54px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-box {
+  width: 150px;
+  height: 200px;
+  margin-top: auto;
+  background: gray;
+  color: aliceblue;
+  font-size: 25px;
+  text-align: center;
+  line-height: 200px;
+  border-radius: 20px;
+  margin: 10px ;
+}
+.flex-box img {
+  width: 150px;
+  height: 200px;
+}
+.kotak {
+  display: none;
+}
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap");
+
+  /* ukuran tablet */
+  @media screen and (max-width: 768px) {
+    nav ul {
+      width: 50%;
+    }
+    .dropdown {
+      display: none;
+    }
+  }
+  /* ukuran penyesuaian */
+  @media screen and (max-width: 695px) {
+    .menu-toggle {
+      display: flex;
+    }
+    nav ul {
+      position: absolute;
+      left: -70px;
+      top: 0;
+      width: 80%;
+      height: 100vh;
+      flex-direction: column;
+      margin-left: 10%;
+      justify-content: space-evenly;
+      align-items: center;
+      background-color: black;
+      z-index: -1;
+      transform: translateX(-500px);
+      transition: all 1s;
+    }
+    nav ul.slide {
+      transform: translateX(0);
+    }
+  }
+  /* ukuran mobile */
+  @media screen and (max-width: 576px) {
+    .menu-toggle {
+      display: flex;
+    }
+    nav ul.slide {
+      transform: translateX(0);
+    }
+  }
+  /* ukuran laptop opsional */
+  @media screen and (max-width: 1500px) {
+    .dropdown-content {
+      display: none;
+    }
+    .box {
+      margin-right: 9px;
+      margin-left: 9px;
+    }
+    .menu-toggle {
+      margin-left: 15px;
+    }
+    .flex-container {
+    }
+  }
