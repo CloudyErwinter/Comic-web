@@ -14,3 +14,10 @@ window.addEventListener("click", function (event) {
         dropdownContent.style.display = "none";
     }
 });
+
+const menuToggle = document.querySelector('.menu-toggle input');
+const nav = document.querySelector('nav ul');
+
+menuToggle.addEventListener('click', function( ) {
+    nav.classList.toggle('slide');
+});
