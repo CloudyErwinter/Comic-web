@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 
 /* navbar  */
@@ -35,7 +35,6 @@ a:hover {
   color: rgb(75, 73, 73);
 }
 
-
 /* Style dasar untuk dropdown */
 .dropdown {
   position: relative;
@@ -43,7 +42,7 @@ a:hover {
 }
 
 /* Tombol dropdown */
-.dropdown-logo { 
+.dropdown-logo {
   height: 36px;
   border-radius: 45%;
   margin-top: 14%;
@@ -133,7 +132,7 @@ body {
 
 .menu-toggle input:checked ~ span:nth-child(2) {
   background-color: white;
-  transform: rotate(45deg) translate( -1px, -4px);
+  transform: rotate(45deg) translate(-1px, -4px);
 }
 .menu-toggle input:checked ~ span:nth-child(3) {
   opacity: 0;
@@ -214,7 +213,7 @@ body {
 }
 
 .sc {
-    z-index: 99999;
+  z-index: 99999;
 }
 
 .box a {
@@ -226,14 +225,14 @@ body {
   color: white;
 }
 
-.box i { 
+.box i {
   padding: 3px 20px 10px;
 }
-
 
 /* slideshow */
 .slide {
   overflow: hidden;
+  width: 100%;
   z-index: -1;
 }
 .slide img {
@@ -248,9 +247,11 @@ body {
   height: auto;
   overflow: hidden;
   float: left;
+  display: flex;
 }
 
 .middle {
+  width: 100%;
   position: absolute;
   top: 58px;
   transform: translate(0%, 0%);
@@ -272,4 +273,4 @@ body {
   cursor: pointer;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap");
