@@ -3,7 +3,6 @@
   padding: 0;
 }
 
-
 body {
   font-family: "Noto Sans", sans-serif;
 }
@@ -13,7 +12,7 @@ nav {
   background-color: black;
   display: flex;
   justify-content: space-around;
-  height: 50px;
+  height: 54px;
 }
 
 nav ul {
@@ -29,7 +28,6 @@ li {
 a {
   text-decoration: none;
   color: white;
-  color: white;
   text-align: left;
 }
 a:hover {
@@ -37,61 +35,93 @@ a:hover {
 }
 
 /* Style dasar untuk dropdown */
-.dropdown {
-  position: relative;
-  display: inline-block;
+/* button */
+.user-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  cursor: pointer;
+  justify-content: space-around;
+  margin-top: 5px;
 }
 
-/* Tombol dropdown */
-.dropdown-logo {
-  height: 36px;
-  border-radius: 45%;
-  margin-top: 14%;
-  margin-left: -10%;
-  cursor: pointer;
-}
-/* .dropdown-button {
-  background-color: transparent;
-  color: #fff;
-  padding: 10px 10px 10px;
-  padding: 10px 10px 10px;
-  border: none;
-  cursor: pointer;
-}
-
-.dropdown-content {
-  display: none;
+/* content */
+.sub-menu-warp {
   position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  top: 7%;
+  right: 10%;
+  width: 300px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 1s;
+}
+.sub-menu-warp.open-menu {
+  max-height: 400px;
 }
 
-.dropdown-content a {
-  color: #5a5858;
-  color: #5a5858;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+.sub-menu {
+  background: #252525;
+  padding: 20px;
+  margin: 10px;
 }
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  height: 100vh;
-  display: flexbox;
-  justify-content: center;
+.user-info {
+  display: flex;
   align-items: center;
-  background-color: white;
-} */
+}
+.user-info h2 {
+  color: #fff;
+  font-weight: 500;
+}
+.user-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.sub-menu hr {
+  border: 0;
+  height: 1px;
+  width: 100%;
+  background: #ffffff;
+  margin: 10px 0 15px;
+}
+.sub-menu-link {
+  display: flex;
+  color: #ffffff;
+  align-items: center;
+  text-decoration: none;
+  margin: 12px 0;
+}
+.sub-menu-link p {
+  width: 100%;
+}
+.sub-menu-link i {
+  background: #575757;
+  border-radius: 50%;
+  padding: 6px 8px 4px;
+  margin-right: 15px;
+}
+.sub-menu-link:hover i {
+  background: #fff;
+}
+.pb {
+  margin-top: 3px;
+}
+.ps {
+  margin-top: 3px;
+}
+.sub-menu-link span {
+  font-size: 22px;
+  transition: transform 0.5s;
+}
+.sub-menu-link:hover span {
+  transform: translateX(5px);
+}
+.sub-menu-link:hover p{
+  font-weight: 600;
+}
+
 
 /* Hamburger menu */
 .menu-toggle {
@@ -155,14 +185,14 @@ body {
     display: none;
   }
 }
-/* ukuran mobile */
-@media screen and (max-width: 576px) {
+/* ukuran penyesuaian */
+@media screen and (max-width: 695px) {
   .menu-toggle {
     display: flex;
   }
   nav ul {
     position: absolute;
-    left: -60px;
+    left: -70px;
     top: 0;
     width: 80%;
     height: 100vh;
@@ -179,9 +209,18 @@ body {
     transform: translateX(0);
   }
 }
+/* ukuran mobile */
+@media screen and (max-width: 576px) {
+  .menu-toggle {
+    display: flex;
+  }
+  nav ul.slide {
+    transform: translateX(0);
+  }
+}
 /* ukuran laptop opsional */
 @media screen and (max-width: 1500px) {
-  .dropdown {
+  .dropdown-content {
     display: none;
   }
   .box {
@@ -197,13 +236,13 @@ body {
 
 .box {
   background-color: rgb(255, 255, 255);
-  height: 20px;
-  width: auto;
+  height: 25px !important;
+  width: auto !important;
   display: flex;
   cursor: pointer;
-  padding: 9px 25px;
+  padding: 9px 25px !important;
   border-radius: 50px;
-  margin-top: 6px;
+  margin-top: 6px !important;
 }
 
 .box input {
@@ -217,13 +256,16 @@ body {
   z-index: 99999;
 }
 
-.box a {
+.box button {
   color: black;
-  margin-top: -1px;
-  margin-right: -15%;
+  margin-top: 2px;
+  margin-right: -12%;
+  border: none;
+  cursor: pointer;
+  background: none;
 }
 .box a:hover {
-  color: white;
+  color: rgb(73, 73, 73);
 }
 
 .box i {
@@ -233,7 +275,7 @@ body {
 /* slideshow */
 .slide {
   overflow: hidden;
-  width: 100%;
+  width: 50%;
   z-index: -1;
 }
 .slide img {
@@ -249,6 +291,9 @@ body {
   overflow: hidden;
   float: left;
   display: flex;
+}
+#slidershow {
+  z-index: -2;
 }
 
 .middle {
