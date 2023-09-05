@@ -1,14 +1,13 @@
 * {
   margin: 0;
-  padding: 0;
-
-  font-family: cursive;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
 }
 
 /* navbar  */
 nav {
-  background-color: black;
+  background-color: #252525;
   display: flex;
   justify-content: space-around;
   height: 54px;
@@ -18,19 +17,27 @@ nav ul {
   display: flex;
   list-style: none;
   align-items: center;
+  margin-top: 14px;
+  padding-left: 0px;
 }
 
-li {
-  margin: 0 20px;
+nav ul li {
+  margin: 0 0px;
 }
 
-a {
+nav ul li a {
   text-decoration: none;
   color: white;
-  text-align: left;
+  padding-left: 16px;
+  padding-top: 20px;
+  padding-right: 16px;
+  padding-bottom: 20px;
 }
-a:hover {
-  color: rgb(75, 73, 73);
+
+nav ul li a:hover {
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  background: blue;
 }
 
 /* Style dasar untuk dropdown */
@@ -42,13 +49,13 @@ a:hover {
   display: flex;
   cursor: pointer;
   justify-content: space-around;
-  margin-top: 5px;
+  margin-top: 0px;
 }
 
 /* content */
 .sub-menu-warp {
   position: absolute;
-  top: 7%;
+  top: 80%;
   right: 10%;
   width: 300px;
   max-height: 0px;
@@ -88,7 +95,7 @@ a:hover {
 .sub-menu-link {
   display: flex;
   color: #ffffff;
-  align-items: center;
+  /* align-items: center; */
   text-decoration: none;
   margin: 12px 0;
 }
@@ -98,21 +105,15 @@ a:hover {
 .sub-menu-link i {
   background: #575757;
   border-radius: 50%;
-  padding: 6px 8px 4px;
+  padding: 10px 10px 10px;
   margin-right: 15px;
 }
 .sub-menu-link:hover i {
-  background: #fff;
-}
-.pb {
-  margin-top: 3px;
-}
-.ps {
-  margin-top: 3px;
+  background: gray;
 }
 .sub-menu-link span {
   font-size: 22px;
-  transition: transform 0.5s;
+  transition: transform 0,9s;
 }
 .sub-menu-link:hover span {
   transform: translateX(5px);
@@ -128,7 +129,7 @@ a:hover {
   height: 20px;
   justify-content: space-between;
   margin-left: 1%;
-  margin-top: 14px;
+  margin-top: 0px;
   position: relative;
 }
 .menu-toggle input {
@@ -197,7 +198,7 @@ a:hover {
 }
 
 .box button {
-  color: black;
+  color: rgb(0, 0, 0);
   margin-top: 2px;
   margin-right: -12%;
   border: none;
@@ -290,7 +291,7 @@ a:hover {
   display: flex;
 }
 /* Media query untuk tampilan layar kecil */
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
   .hero-container {
     flex-direction: column-reverse;
     text-align: center;
@@ -298,6 +299,7 @@ a:hover {
 
   .hero-image {
     max-width: 100%;
+    /* max-height: 100%; */
     margin-bottom: 200px;
   }
 
@@ -376,10 +378,17 @@ a:hover {
     margin-left: 10%;
     justify-content: space-evenly;
     align-items: center;
-    background-color: black;
+    background-color: #252525;
     z-index: -1;
     transform: translateX(-500px);
     transition: all 1s;
+  }
+  nav ul li a:hover {
+    background: blue;
+    padding-left: 100px;
+    padding-top: 20px;
+    padding-right: 100px;
+    padding-bottom: 20px;
   }
   nav ul.slide {
     transform: translateX(0);
@@ -389,6 +398,13 @@ a:hover {
 @media screen and (max-width: 576px) {
   .menu-toggle {
     display: flex;
+  }
+  nav ul li a:hover {
+    background: blue;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-bottom: 20px;
   }
   nav ul.slide {
     transform: translateX(0);
@@ -480,6 +496,7 @@ input:focus {
   border: none;
   background: none;
   opacity: 1;
+  margin-top: 0px;
   cursor: pointer;
   /* visibility: hidden; */
 }
@@ -491,6 +508,6 @@ input:not(:placeholder-shown) ~ .reset {
 /* sizing svg icons */
 .form svg {
   width: 17px;
-  margin-top: 3px;
+  margin-top: -5px;
   cursor: pointer;
 }
