@@ -25,7 +25,7 @@ nav ul li {
   margin: 0 0px;
 }
 
-nav ul li a {
+nav ul li a:is(:link, :active, :visited) {
   text-decoration: none;
   color: white;
   padding-left: 16px;
@@ -34,12 +34,18 @@ nav ul li a {
   padding-bottom: 20px;
 }
 
-nav ul li a:hover {
+/* nav ul li a:hover {
   color: rgb(255, 255, 255);
   font-weight: 500;
   background: blue;
-}
+} */
 
+/* active page */
+a:is(:link, :active, :visited).active {
+  color: white;
+  background-color: blue;
+  font-weight: 600;
+}
 /* Style dasar untuk dropdown */
 /* button */
 .user-pic {
@@ -276,7 +282,7 @@ nav ul li a:hover {
   position: relative;
   width: auto;
   padding: 10px;
-  height: 100%;
+  height: 50%;
 }
 
 .hero-description {
@@ -298,7 +304,7 @@ nav ul li a:hover {
   }
 
   .hero-image {
-    max-width: 100%;
+    max-width: 50%;
     /* max-height: 100%; */
     margin-bottom: 200px;
   }
@@ -311,7 +317,7 @@ nav ul li a:hover {
   display: flex;
   max-width: 200px;
   justify-content: space-between;
-  gap: 10px;
+  gap: 0px;
 }
 /* .flex-box {
   width: 150px;
@@ -390,6 +396,15 @@ nav ul li a:hover {
     padding-right: 100px;
     padding-bottom: 20px;
   }
+  a:is(:link, :active, :visited).active {
+    color: white;
+    background-color: blue;
+    padding-left: 100px;
+    padding-top: 20px;
+    padding-right: 100px;
+    padding-bottom: 20px;
+    font-weight: 600;
+  }
   nav ul.slide {
     transform: translateX(0);
   }
@@ -421,8 +436,6 @@ nav ul li a:hover {
   }
   .menu-toggle {
     margin-left: 15px;
-  }
-  .flex-container {
   }
 }
 
