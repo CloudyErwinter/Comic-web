@@ -117,10 +117,9 @@ a:hover {
 .sub-menu-link:hover span {
   transform: translateX(5px);
 }
-.sub-menu-link:hover p{
+.sub-menu-link:hover p {
   font-weight: 600;
 }
-
 
 /* Hamburger menu */
 .menu-toggle {
@@ -172,7 +171,6 @@ a:hover {
   transform: rotate(-45deg) translate(2px, 1px);
   background-color: white;
 }
-
 
 /* search */
 
@@ -234,10 +232,6 @@ a:hover {
   float: left;
   display: flex;
 }
-#slidershow {
-  z-index: -2;
-}
-
 .middle {
   width: 100%;
   position: absolute;
@@ -261,17 +255,65 @@ a:hover {
   cursor: pointer;
 }
 /* item */
-.flex-container {
-  width: 100%;
-  height: auto;
-  position: absolute;
-  margin-top: 54px;
+/* .hero-container {
   display: flex;
-  flex-wrap: wrap;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  padding: 20px;
+  margin-top: 55px;
+  background-color: #f0f0f0;
 }
-.flex-box {
+
+.hero-img-kiri {
+  max-width: 55%;
+  position: relative;
+}
+ */
+.hero-image {
+  position: relative;
+  width: auto;
+  padding: 10px;
+  height: 100%;
+}
+
+.hero-description {
+  max-width: 45%;
+  height: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.row {
+  min-height: 100vh;
+  display: flex;
+}
+/* Media query untuk tampilan layar kecil */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-image {
+    max-width: 100%;
+    margin-bottom: 200px;
+  }
+
+  .hero-description {
+    max-width: 100%;
+  }
+}
+*/ .gambar-kiri {
+  display: flex;
+  max-width: 200px;
+  justify-content: space-between;
+  gap: 10px;
+}
+/* .flex-box {
   width: 150px;
-  height: 200px;
+  height: 150px;
   margin-top: auto;
   background: gray;
   color: aliceblue;
@@ -279,72 +321,176 @@ a:hover {
   text-align: center;
   line-height: 200px;
   border-radius: 20px;
-  margin: 10px ;
-}
+  margin: 10px;
+} */
 .flex-box img {
-  width: 150px;
-  height: 200px;
+  width: 100%;
+  height: auto;
 }
 .kotak {
   display: none;
+  width: 50px;
+  height: auto;
+}
+
+.gambar-kiri {
+  max-width: 700px;
+}
+
+.isi-kanan {
+  max-width: 300px;
+}
+
+.isi-kanan {
+  font-size: 10px;
+}
+
+.flex-box span {
+  width: 30px;
+  height: 2px;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap");
 
-  /* ukuran tablet */
-  @media screen and (max-width: 768px) {
-    nav ul {
-      width: 50%;
-    }
-    .dropdown {
-      display: none;
-    }
+/* ukuran tablet */
+@media screen and (max-width: 768px) {
+  nav ul {
+    width: 50%;
   }
-  /* ukuran penyesuaian */
-  @media screen and (max-width: 695px) {
-    .menu-toggle {
-      display: flex;
-    }
-    nav ul {
-      position: absolute;
-      left: -70px;
-      top: 0;
-      width: 80%;
-      height: 100vh;
-      flex-direction: column;
-      margin-left: 10%;
-      justify-content: space-evenly;
-      align-items: center;
-      background-color: black;
-      z-index: -1;
-      transform: translateX(-500px);
-      transition: all 1s;
-    }
-    nav ul.slide {
-      transform: translateX(0);
-    }
+  .dropdown {
+    display: none;
   }
-  /* ukuran mobile */
-  @media screen and (max-width: 576px) {
-    .menu-toggle {
-      display: flex;
-    }
-    nav ul.slide {
-      transform: translateX(0);
-    }
+}
+/* ukuran penyesuaian */
+@media screen and (max-width: 695px) {
+  .menu-toggle {
+    display: flex;
   }
-  /* ukuran laptop opsional */
-  @media screen and (max-width: 1500px) {
-    .dropdown-content {
-      display: none;
-    }
-    .box {
-      margin-right: 9px;
-      margin-left: 9px;
-    }
-    .menu-toggle {
-      margin-left: 15px;
-    }
-    .flex-container {
-    }
+  nav ul {
+    position: absolute;
+    left: -70px;
+    top: 0;
+    width: 80%;
+    height: 100vh;
+    flex-direction: column;
+    margin-left: 10%;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    z-index: -1;
+    transform: translateX(-500px);
+    transition: all 1s;
   }
+  nav ul.slide {
+    transform: translateX(0);
+  }
+}
+/* ukuran mobile */
+@media screen and (max-width: 576px) {
+  .menu-toggle {
+    display: flex;
+  }
+  nav ul.slide {
+    transform: translateX(0);
+  }
+}
+/* ukuran laptop opsional */
+@media screen and (max-width: 1500px) {
+  .dropdown-content {
+    display: none;
+  }
+  .box {
+    margin-right: 9px;
+    margin-left: 9px;
+  }
+  .menu-toggle {
+    margin-left: 15px;
+  }
+  .flex-container {
+  }
+}
+
+/* From uiverse.io by @satyamchaudharydev */
+/* removing default style of button */
+
+.form button {
+  border: none;
+  background: none;
+  color: #8b8ba7;
+}
+/* styling of whole input container */
+.form {
+  --timing: 0.2s;
+  --width-of-input: 250px;
+  --height-of-input: 53px;
+  --border-height: 2px;
+  --input-bg: #fff;
+  --border-color: #2f2ee9;
+  --border-radius: 35px;
+  --after-border-radius: 1px;
+  position: relative;
+  width: var(--width-of-input);
+  max-height: 80%;
+  display: flex;
+  align-items: center;
+  padding-inline: 0.8em;
+  border-radius: var(--border-radius);
+  transition: border-radius 0.5s ease;
+  background: var(--input-bg, #fff);
+}
+/* styling of Input */
+.input {
+  font-size: 0.9rem;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: none;
+}
+/* styling of animated border */
+.form:before {
+  content: "";
+  position: absolute;
+  background: var(--border-color);
+  transform: scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: var(--border-height);
+  left: 0;
+  bottom: 0;
+  border-radius: 1px;
+  transition: transform var(--timing) ease;
+}
+/* Hover on Input */
+.form:focus-within {
+  border-radius: var(--after-border-radius);
+}
+
+input:focus {
+  outline: none;
+}
+/* here is code of animated border */
+.form:focus-within:before {
+  transform: scale(1);
+}
+/* styling of close button */
+/* == you can click the close button to remove text == */
+.reset {
+  border: none;
+  background: none;
+  opacity: 1;
+  cursor: pointer;
+  /* visibility: hidden; */
+}
+/* close button shown when typing */
+input:not(:placeholder-shown) ~ .reset {
+  opacity: 1;
+  visibility: visible;
+}
+/* sizing svg icons */
+.form svg {
+  width: 17px;
+  margin-top: 3px;
+  cursor: pointer;
+}
