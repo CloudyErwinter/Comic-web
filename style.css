@@ -249,6 +249,7 @@ a:is(:link, :active, :visited).active {
 p {
   margin-bottom: 5px;
 }
+
 .hero-description {
   display: block;
   height: 100%;
@@ -257,6 +258,7 @@ p {
   background-color: #ffffff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 .info {
   margin-bottom: 5px;
 }
