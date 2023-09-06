@@ -119,7 +119,7 @@ a:is(:link, :active, :visited).active {
 }
 .sub-menu-link span {
   font-size: 22px;
-  transition: transform 0,9s;
+  transition: transform 0, 9s;
 }
 .sub-menu-link:hover span {
   transform: translateX(5px);
@@ -179,8 +179,6 @@ a:is(:link, :active, :visited).active {
   background-color: white;
 }
 
-
-
 /* slideshow */
 .slide {
   overflow: hidden;
@@ -229,7 +227,7 @@ a:is(:link, :active, :visited).active {
   position: absolute;
   padding: 20px;
   margin-top: 55px;
-  margin-top: 54px; 
+  margin-top: 54px;
   padding: 1rem;
 }
 
@@ -241,7 +239,7 @@ a:is(:link, :active, :visited).active {
 
 .hero-image {
   /* position: relative; */
-  width: 394px;
+  width: 300px;
   padding: 10px;
   height: 50%;
 }
