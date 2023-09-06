@@ -11,7 +11,7 @@ function toggleMenu() {
     subMenu.classList.toggle("open-menu")
 }
 const activePage = window.location.pathname;
-console.navLinks = document.querySelectorAll('nav a').forEach(link => {
+console.navLinks = document.querySelectorAll('nav ul li a').forEach(link => {
     if(link.href.includes(`${activePage}`)) {
         link.classList.add('active');
     }
