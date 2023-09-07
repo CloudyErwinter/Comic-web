@@ -1,22 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
-</head>
-<body>
-  <form class="form">
-    <span class="input-span">
-    <label for="email" class="label">Email</label>
-    <input type="email" name="email" id="email"></span>
-    <span class="input-span">
-    <label for="password" class="label">Password</label>
-    <input type="password" name="password" id="password"></span>
-    <span class="span"><a href="#">Forgot password?</a></span>
-    <input class="submit" type="submit" value="Log in">
-    <span class="span">Don't have an account? <a href="#">Sign up</a></span>
-  </form>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Sign Up</title>
+    <style>
+      /* @media (max-width: 1114px) {
+  form {
+  }
+} */
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      form {
+        --bg-light: #efefef;
+        --bg-dark: #707070;
+        --clr: #5867bc;
+        --clr-alpha: #9c9c9c60;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: 50%;
+      }
+      .mom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .form .input-span {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      form input[type="email"],
+      form input[type="password"],
+      form input[type="text"] {
+        border-radius: 0.5rem;
+        padding: 1rem 0.75rem;
+        width: 100%;
+        border: none;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        background-color: var(--clr-alpha);
+        outline: 2px solid var(--bg-dark);
+      }
+
+      form input[type="email"]:focus,
+      form input[type="password"]:focus,
+      form input[type="text"]:focus {
+        outline: 2px solid var(--clr);
+      }
+
+      .label {
+        align-self: flex-start;
+        color: var(--clr);
+        font-weight: 600;
+      }
+
+      form .submit {
+        padding: 1rem 0.75rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        border-radius: 3rem;
+        background-color: var(--bg-dark);
+        color: var(--bg-light);
+        border: none;
+        cursor: pointer;
+        transition: all 300ms;
+        font-weight: 600;
+        font-size: 0.9rem;
+      }
+
+      form .submit:hover {
+        background-color: var(--clr);
+        color: var(--bg-black);
+      }
+
+      .span {
+        text-decoration: none;
+        color: var(--bg-dark);
+      }
+
+      .span a {
+        color: var(--clr);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mom">
+      <form class="form">
+        <span class="input-span">
+          <label for="email" class="label">Email</label>
+          <input type="email" name="email" placeholder="Email" id="email"
+        /></span>
+        <span class="input-span">
+          <label for="text" class="label">Username</label>
+          <input type="text" name="text" placeholder="Username" id="text"
+        /></span>
+        <span class="input-span">
+          <label for="password" class="label">Password</label>
+          <input type="password" name="password" placeholder="Password" id="password"
+        /></span>
+        <span class="input-span">
+          <label for="password" class="label">Password Confirm</label>
+          <input type="password" name="password2" placeholder="Confirm Password" id="password2"
+        /></span>
+        <input class="submit" type="submit" value="Create" />
+        <span class="span">Already have a account? <a href="login.html">Login</a></span>
+      </form>
+    </div>
+  </body>
 </html>
