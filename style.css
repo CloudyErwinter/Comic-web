@@ -11,6 +11,7 @@ nav {
   display: flex;
   justify-content: space-around;
   height: 54px;
+  border-bottom: 3px solid blue;
 }
 
 nav ul {
@@ -222,7 +223,7 @@ a:is(:link, :active, :visited).active {
   margin: 6px;
   cursor: pointer;
 }
-/* item */
+item
 .hero-container {
   height: 100%;
   position: absolute;
@@ -238,11 +239,9 @@ a:is(:link, :active, :visited).active {
 }
 
 .hero-image {
-  /* position: relative; */
   width: 200px;
   padding: 10px;
   height: 50%;
-  /* width: 924px; */
   box-shadow: 0 1px 4px gray;
 }
 
@@ -251,7 +250,7 @@ p {
 }
 
 .hero-description {
-  display: block;
+  display: relative;
   height: 100%;
   padding: 20px;
   background-color: #ffffff;
@@ -263,8 +262,8 @@ p {
 }
 .info-des {
   margin-bottom: 5px;
-  font-weight: 700;
-  font-size: medium;
+  font-weight: 600;
+  font-size: small;
 }
 .row {
   min-height: 100;
@@ -282,6 +281,10 @@ p {
     /* max-height: 100%; */
     margin-bottom: 0px;
   }
+  .info-des-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 
   .hero-description {
     width: 100%;
@@ -289,13 +292,15 @@ p {
     text-align: start;
   }
   .hero-description h1 {
-    font-size: xx-large;
+    font-size: larger;
+    font-weight: 600;
   }
-}
-.hero-img-kiri {
+  .hero-img-kiri {
   height: 100%;
   gap: 0px;
 }
+}
+
 /* .flex-box {
   width: 150px;
   height: 150px;
@@ -391,11 +396,18 @@ p {
   .menu-toggle {
     display: flex;
   }
+  a:is(:link, :active, :visited).active {
+    background: blue;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
   nav ul li a:hover {
     background: blue;
-    padding-left: 50px;
+    padding-left: 20px;
     padding-top: 20px;
-    padding-right: 50px;
+    padding-right: 20px;
     padding-bottom: 20px;
   }
   nav ul.slide {
@@ -500,4 +512,138 @@ input:not(:placeholder-shown) ~ .reset {
   width: 17px;
   margin-top: -5px;
   cursor: pointer;
+}
+/* testing */
+@media screen and (max-width: 750px) {
+  .bod {
+    max-width: 100%;
+    text-align: left;
+    background: gray;
+    margin-top: 7px;
+    padding-top: 15px;
+    white-space: normal;
+  }
+
+  .bod img {
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 0px;
+  }
+  .box1 p {
+    /* width: 100%; */
+    font-size: smaller;
+    padding-left: 10px;
+  }
+  .box1 h2 {
+    padding-left: 10px;
+    font-size: larger;
+    font-weight: 600;
+  }
+}
+.bod {
+  padding-left: 10px;
+  background: gray;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  margin-top: 7px;
+  padding-top: 15px;
+  justify-content: center;
+  align-items: center;    
+  max-width: 100%;
+  white-space: normal;
+}
+.bod img {
+  width: 150px;
+  max-width: 100%;
+}
+.box1 {
+  padding-bottom: 20px;
+  display: flex;
+  color: #fff;
+  /* align-items: center; */
+}
+.box1 h2{
+  font-size: larger;
+  font-weight: 600;
+  max-width: 100%;
+  margin: 10px 0;
+}
+.box1 p {
+  width: 100%;
+  font-size: small;
+  margin-bottom: 3px;
+}
+.box2 {
+  padding-left: 10px;
+}
+.current {
+  display: flex;
+  margin-top: 60px;
+  width: 100%;
+  height: 6vh;
+  /* justify-content: center; */
+  background: blue;
+}
+.p-info a {
+  text-decoration: none;
+  color: white;
+}
+.p-info:hover a {
+  text-decoration: none;
+  color: orange;
+}
+.p-info {
+  color: white;
+
+  padding-left: 6px;
+  padding-top: 8px;
+}
+.footer-head {
+  display: flex;
+  border-top: 3px solid blue;
+  justify-content: center;
+  margin-top: 5px;
+  padding: 10px 10px 10px;
+  background: #8b8ba7;
+}
+.head-p {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 5px;
+}
+.prev-page a:hover {
+  color: blue;
+  background: gray;
+}
+.next-page a:hover {
+  color: blue;
+  background: gray;
+}
+.prev-page:hover {
+  color: blue;
+  background: gray;
+}
+.next-page:hover {
+  color: blue;
+  background: gray;
+}
+.prev-page {
+  background: #2f2ee9;
+  padding: 3px 3px 3px;
+}
+.prev-page a {
+  text-decoration: none;
+  color: black;
+  background: #2f2ee9;
+  padding: 3px 3px 3px;
+}
+.next-page {
+  background: #2f2ee9;
+  padding: 3px 3px 3px;
+}
+.next-page a {
+  text-decoration: none;
+  color: black;
+  background: #2f2ee9;
+  padding: 3px 3px 3px;
 }
