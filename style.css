@@ -138,6 +138,7 @@ a:is(:link, :active, :visited).active {
   margin-top: 0px;
   position: relative;
 }
+
 .menu-toggle input {
   position: absolute;
   width: 40px;
