@@ -241,9 +241,10 @@ a:is(:link, :active, :visited).active {
 
 .hero-image {
   /* position: relative; */
-  width: 150px;
+  width: 200px;
   padding: 10px;
   height: 50%;
+  /* width: 924px; */
   box-shadow: 0 1px 4px gray;
 }
 
@@ -254,7 +255,6 @@ p {
 .hero-description {
   display: block;
   height: 100%;
-  width: 924px;
   padding: 20px;
   background-color: #ffffff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -273,7 +273,7 @@ p {
   display: flex;
 }
 /* Media query untuk tampilan layar kecil */
-@media (max-width: 1007px) {
+@media (max-width: 1114px) {
   .hero-container {
     flex-direction: column-reverse;
     text-align: center;
