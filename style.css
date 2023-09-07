@@ -119,7 +119,7 @@ a:is(:link, :active, :visited).active {
 }
 .sub-menu-link span {
   font-size: 22px;
-  transition: transform 0,9s;
+  transition: transform 0, 9s;
 }
 .sub-menu-link:hover span {
   transform: translateX(5px);
@@ -180,8 +180,6 @@ a:is(:link, :active, :visited).active {
   background-color: white;
 }
 
-
-
 /* slideshow */
 .slide {
   overflow: hidden;
@@ -238,7 +236,6 @@ a:is(:link, :active, :visited).active {
   height: 100%;
   width: 394px;
 }
-
 
 .hero-image {
   /* position: relative; */
