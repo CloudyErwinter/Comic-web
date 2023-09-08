@@ -336,12 +336,7 @@ p {
     display: none;
   }
   .a {
-    border: 2px solid;
-    overflow: hidden;
-    width: 100px;
-    margin: 58px auto;
-    background: darkgray;
-    padding: 10px;
+    width: 100% !important;
   }
 }
 /* ukuran penyesuaian */
