@@ -1,9 +1,9 @@
 /* css login */
 form {
-  --bg-light: #000000;
-  --bg-dark: #4c4ac0;
+  --bg-light: #efefef;
+  --bg-dark: #707070;
   --clr: #5867bc;
-  --clr-alpha: #ffffff60;
+  --clr-alpha: #9c9c9c60;
   display: flex;
   flex-direction: column;
   align-items: center;
