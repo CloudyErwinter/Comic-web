@@ -8,11 +8,11 @@
 
 /* navbar  */
 nav {
-  background-color: #1B6FA8;
+  background-color: #1b6fa8;
   display: flex;
   justify-content: space-around;
   height: 54px;
-  border-bottom: 3px solid #1F6E8C;
+  border-bottom: 3px solid #1f6e8c;
 }
 
 nav ul {
@@ -29,7 +29,7 @@ nav ul li {
 
 nav ul li a:is(:link, :active, :visited) {
   text-decoration: none;
-  color: #FAFCFC;
+  color: #fafcfc;
   padding-left: 16px;
   padding-top: 20px;
   padding-right: 16px;
@@ -38,8 +38,8 @@ nav ul li a:is(:link, :active, :visited) {
 
 /* active page */
 a:is(:link, :active, :visited).active {
-  color: #FAFCFC;
-  background-color: #F4B333;
+  color: #fafcfc;
+  background-color: #f4b333;
   font-weight: 600;
 }
 /* Style dasar untuk dropdown */
@@ -64,14 +64,13 @@ a:is(:link, :active, :visited).active {
   max-height: 0px;
   overflow: hidden;
   transition: max-height 1s;
-  
 }
 .sub-menu-warp.open-menu {
   max-height: 400px;
 }
 
 .sub-menu {
-  background: #F4B333;
+  background: #f4b333;
   padding: 20px;
   margin: 10px;
 }
@@ -113,7 +112,7 @@ a:is(:link, :active, :visited).active {
   margin-right: 15px;
 }
 .sub-menu-link:hover i {
-  background: #1B6FA8;
+  background: #1b6fa8;
 }
 .sub-menu-link span {
   font-size: 22px;
@@ -124,7 +123,7 @@ a:is(:link, :active, :visited).active {
 }
 .sub-menu-link:hover p {
   font-weight: 600;
-  color: #1B6FA8;
+  color: #1b6fa8;
 }
 
 /* Hamburger menu */
@@ -153,7 +152,7 @@ a:is(:link, :active, :visited).active {
   display: block;
   width: 30px;
   height: 2px;
-  background-color: #F4B333;
+  background-color: #f4b333;
   border-radius: 3px;
   transition: all 1s;
 }
@@ -354,13 +353,13 @@ p {
     margin-left: 10%;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #1B6FA8;
+    background-color: #1b6fa8;
     z-index: -1;
     transform: translateX(-500px);
     transition: all 1s;
   }
   nav ul li a:hover {
-    background: #F4B333;
+    background: #f4b333;
     padding-left: 100px;
     padding-top: 20px;
     padding-right: 100px;
@@ -368,7 +367,7 @@ p {
   }
   a:is(:link, :active, :visited).active {
     color: white;
-    background-color: #F4B333;
+    background-color: #f4b333;
     padding-left: 100px;
     padding-top: 20px;
     padding-right: 100px;
@@ -431,7 +430,7 @@ p {
   --height-of-input: 53px;
   --border-height: 2px;
   --input-bg: #fff;
-  --border-color: #F4B333;
+  --border-color: #f4b333;
   --border-radius: 35px;
   --after-border-radius: 1px;
   position: relative;
@@ -544,10 +543,10 @@ input:not(:placeholder-shown) ~ .reset {
 }
 .box1 {
   display: flex;
-  color: #FAFCFC;
-  background-color: #1B6FA8;
+  color: #fafcfc;
+  background-color: #1b6fa8;
   border-radius: 10px;
-  padding: 15px;
+  padding: 10px;
   margin: 3px;
 }
 .box1 img {
@@ -569,10 +568,10 @@ input:not(:placeholder-shown) ~ .reset {
 }
 .box2 h2 a {
   text-decoration: none;
-  color: #FAFCFC;
+  color: #fafcfc;
 }
 .box2 h2 a:hover {
-  color: #F4B333;
+  color: #f4b333;
 }
 .current {
   display: flex;
@@ -580,16 +579,16 @@ input:not(:placeholder-shown) ~ .reset {
   height: 7vh;
   margin-top: 60px;
   border-radius: 10px;
-  background: #1B6FA8;
+  background: #1b6fa8;
 }
 .p-info a {
   text-decoration: none;
-  color: #FAFCFC;
+  color: #fafcfc;
   padding: 10px;
 }
 .p-info:hover a {
   text-decoration: none;
-  color: #F4B333;
+  color: #f4b333;
 }
 .p-info {
   color: white;
@@ -597,11 +596,11 @@ input:not(:placeholder-shown) ~ .reset {
   margin-bottom: 10px;
 }
 .footer-head {
-  border-top: 3px solid #1F6E8C;
+  border-top: 3px solid #1f6e8c;
   justify-content: center;
   margin: 0 auto;
   padding: 10px 10px 10px;
-  background: #84A7A1;
+  background: #84a7a1;
 }
 
 .head-p {
@@ -611,14 +610,14 @@ input:not(:placeholder-shown) ~ .reset {
 }
 .head-p a {
   text-decoration: none;
-  color: #FAFCFC;
+  color: #3bc3c3;
 }
 .head-p a:hover {
-  color: #1B6FA8;
+  color: #1b6fa8;
 }
 .next-prev {
   width: auto;
-  background-color: #F4B333;
+  background-color: #f4b333;
   padding: 8px;
   margin-bottom: 3px;
 }
@@ -641,7 +640,7 @@ input:not(:placeholder-shown) ~ .reset {
 .page-name {
   overflow: hidden;
   margin-bottom: 10px;
-  border-bottom: 4px solid #1F6E8C;
+  border-bottom: 4px solid #1f6e8c;
   padding: 7px;
   background: #333;
 }
@@ -703,7 +702,7 @@ input:not(:placeholder-shown) ~ .reset {
 .hot-link a {
   color: black;
 }
-.box2{
+.box2 {
   width: 100%;
 }
 .box2 .ch {
@@ -716,11 +715,13 @@ input:not(:placeholder-shown) ~ .reset {
 .box2 .ch a {
   text-decoration: none;
   float: left;
-  color: #FAFCFC;
+  color: #fafcfc;
 }
 .box2 .ch a:hover {
-  color: #F4B333;
+  color: #f4b333;
 }
 .box2 .ch i {
   font-size: small;
 }
+
+ 
