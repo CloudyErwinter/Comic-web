@@ -3,8 +3,6 @@
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
 }
-.body-head {
-}
 
 /* navbar  */
 nav {
@@ -610,7 +608,7 @@ input:not(:placeholder-shown) ~ .reset {
 }
 .head-p a {
   text-decoration: none;
-  color: #3bc3c3;
+  color: #f1f1f1;
 }
 .head-p a:hover {
   color: #1b6fa8;
@@ -725,12 +723,15 @@ input:not(:placeholder-shown) ~ .reset {
 }
 
 .box12 {
-  /* display: flex; */
   color: #fafcfc;
-  background-color: #1b6fa8;
+  background-color: #1F1F1F;
   border-radius: 10px;
-  padding: 9px;
+  padding: 13px 15px;
   margin: 3px;
+}
+.left {
+  float: left;
+  margin-right: 20px;
 }
 
 .box12 img {
@@ -740,5 +741,79 @@ input:not(:placeholder-shown) ~ .reset {
   width: 180px;
   max-width: 10000%;
 }
-.box21 {
+.salome {
+  --max-lines: 6;
+  --line-height: 1.4;
+  max-height: calc(var(--max-lines) * 1em * var(--line-height));
+  line-height: var(--line-height);
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
+.salome:has(+ .salome-button:not(:checked))::before {
+  content: "";
+  position: absolute;
+  height: calc(2em * var(--line-height));
+  width: 100%;
+  bottom: 0;
+  pointer-events: none;
+  background: linear-gradient(to bottom, transparent, #1F1F1F);
+}
+.salome-button {
+  appearance: none;
+  border: 1px solid #f1f1f1;
+  padding: .5em;
+  border-radius: .25em;
+  cursor: pointer;
+  margin-top: 1rem;
+  background-color: #f1f1f1;
+}
+.salome-button:hover {
+  background-color: #f4b333;
+  border-color: #f4b333;
+}
+.salome-button::before {
+  content: "Show More";
+  color: #1F1F1F;
+  font-weight: 600;
+}
+.salome-button:hover::before {
+  color: #f1f1f1;
+}
+.salome-button:checked::before {
+  content: "Show Less";
+}
+.salome:has(+ .salome-button:checked) {
+  max-height: none;
+}
+.desc-b {
+  font-weight: 600;
+} 
+.chapter-list {
+  color: #fafcfc;
+  background-color: #1F1F1F;
+  border-radius: 10px;
+  padding: 9px;
+  margin: 3px;
+}
+.chapter-list a {
+  text-decoration: none;
+  color: #1F1F1F;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  margin: 2px;
+}
+.chapter-list a:hover {
+  background-color: #f4b333;
+  color: #f1f1f1;
+}
+.chapter-number {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.chapter-list h6 {
+  padding: 0 20px;
+  margin: 10px 0;
 }
