@@ -68,7 +68,7 @@ a:is(:link, :active, :visited).active {
 }
 
 .sub-menu {
-  background: #1F1F1F;
+  background: #1f1f1f;
   padding: 20px;
   margin: 10px;
 }
@@ -405,7 +405,7 @@ input:not(:placeholder-shown) ~ .reset {
 .box1 {
   display: flex;
   color: #fafcfc;
-  background-color: #1F1F1F;
+  background-color: #1f1f1f;
   border-radius: 10px;
   padding: 10px;
   margin: 3px;
@@ -490,13 +490,14 @@ input:not(:placeholder-shown) ~ .reset {
   margin: 58px auto;
   background: darkgray;
   padding: 10px;
+  min-height: 100vh;
 }
 .b {
   overflow: hidden;
 }
 .c {
   overflow: hidden;
-  width: 69%;
+  /* width: 69%; */
   float: left;
 }
 .page-name {
@@ -504,7 +505,7 @@ input:not(:placeholder-shown) ~ .reset {
   margin-bottom: 10px;
   border-bottom: 4px solid #1f6e8c;
   padding: 7px;
-  background: #333;
+  /* background: #333; */
 }
 .Aa {
   overflow: hidden;
@@ -526,12 +527,13 @@ input:not(:placeholder-shown) ~ .reset {
   width: 24%;
 }
 .sidebar {
-  float: right;
-  width: 30%;
+  float: left;
+  width: calc(100% - 20px);
 }
 .section {
   margin-bottom: 10px;
   overflow: hidden;
+  text-align: center;
 }
 .section h3 {
   margin-bottom: 5px;
@@ -588,7 +590,7 @@ input:not(:placeholder-shown) ~ .reset {
 
 .box12 {
   color: #fafcfc;
-  background-color: #1F1F1F;
+  background-color: #1f1f1f;
   border-radius: 10px;
   padding: 13px 15px;
   margin: 3px;
@@ -640,13 +642,13 @@ input:not(:placeholder-shown) ~ .reset {
   width: 100%;
   bottom: 0;
   pointer-events: none;
-  background: linear-gradient(to bottom, transparent, #1F1F1F);
+  background: linear-gradient(to bottom, transparent, #1f1f1f);
 }
 .salome-button {
   appearance: none;
   border: 1px solid #f1f1f1;
-  padding: .5em;
-  border-radius: .25em;
+  padding: 0.5em;
+  border-radius: 0.25em;
   cursor: pointer;
   margin-top: 1rem;
   background-color: #f1f1f1;
@@ -657,7 +659,7 @@ input:not(:placeholder-shown) ~ .reset {
 }
 .salome-button::before {
   content: "Show More";
-  color: #1F1F1F;
+  color: #1f1f1f;
   font-weight: 600;
 }
 .salome-button:hover::before {
@@ -671,17 +673,17 @@ input:not(:placeholder-shown) ~ .reset {
 }
 .desc-b {
   font-weight: 600;
-} 
+}
 .chapter-list {
   color: #fafcfc;
-  background-color: #1F1F1F;
+  background-color: #1f1f1f;
   border-radius: 10px;
   padding: 9px;
   margin: 3px;
 }
 .chapter-list a {
   text-decoration: none;
-  color: #1F1F1F;
+  color: #1f1f1f;
   padding: 10px;
   background-color: #f1f1f1;
   border-radius: 10px;
@@ -759,13 +761,13 @@ input:not(:placeholder-shown) ~ .reset {
   width: 134px;
   height: 155px;
   object-fit: cover;
-} 
+}
 .cards h2 {
   font-weight: 500;
   font-size: 1.3rem;
 }
 .cards span {
-  color: #1F1F1F;
+  color: #1f1f1f;
 }
 
 /* responsive */
@@ -919,7 +921,7 @@ img {
   margin-top: 5px;
 }
 .contain {
-  background-color: #1F1F1F;
+  background-color: #1f1f1f;
 }
 .title-info {
   background-color: #1b6fa8;
@@ -961,7 +963,7 @@ img {
   font-size: 16px;
   margin: 7px;
 }
-.navigations .nav-button  {
+.navigations .nav-button {
   float: left;
 }
 .navigations a {
@@ -977,7 +979,7 @@ img {
   border-radius: 5px;
 }
 .navigations a:hover {
-  color: #1F1F1F;
+  color: #1f1f1f;
 }
 
 /* bawah */
@@ -1002,7 +1004,7 @@ img {
   font-size: 16px;
   margin: 7px;
 }
-.navigations2 .nav-button2  {
+.navigations2 .nav-button2 {
   float: left;
 }
 .navigations2 a {
@@ -1018,7 +1020,20 @@ img {
   border-radius: 5px;
 }
 .navigations2 a:hover {
-  color: #1F1F1F;
+  color: #1f1f1f;
+
+  /* genre list */
+}
+.other {
+  border-top: #1b6fa8;
+  float: left;
+  width: 100%;
+  position: relative;
+  margin-top: 10px;
 }
 
-
+.see {
+  text-align: center;
+  margin-top: 10%;
+  margin: 20px;
+}
