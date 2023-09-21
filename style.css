@@ -486,7 +486,6 @@ input:not(:placeholder-shown) ~ .reset {
 .a {
   border: 2px solid;
   overflow: hidden;
-  width: 1100px;
   margin: 58px auto;
   background: darkgray;
   padding: 10px;
@@ -528,7 +527,7 @@ input:not(:placeholder-shown) ~ .reset {
 }
 .sidebar {
   float: left;
-  width: calc(100% - 20px);
+  width: calc(100% - 30px);
 }
 .section {
   margin-bottom: 10px;
