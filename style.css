@@ -225,6 +225,7 @@ a:is(:link, :active, :visited).active {
     padding-right: 100px;
     padding-bottom: 20px;
     font-weight: 600;
+    box-sizing: border-box;
   }
   nav ul.slide {
     transform: translateX(0);
@@ -409,6 +410,7 @@ input:not(:placeholder-shown) ~ .reset {
   border-radius: 10px;
   padding: 10px;
   margin: 3px;
+  /* min-width: 100%; */
 }
 .box1 img {
   border-radius: 10%;
@@ -498,6 +500,7 @@ input:not(:placeholder-shown) ~ .reset {
   overflow: hidden;
   /* width: 69%; */
   float: left;
+  text-align: center;
 }
 .page-name {
   overflow: hidden;
@@ -527,7 +530,7 @@ input:not(:placeholder-shown) ~ .reset {
 }
 .sidebar {
   float: left;
-  width: calc(100% - 30px);
+  width: 100%;
 }
 .section {
   margin-bottom: 10px;
@@ -1035,4 +1038,52 @@ img {
   text-align: center;
   margin-top: 10%;
   margin: 20px;
+}
+
+.arr {
+  display: flex;
+}
+
+.cih {
+  margin-left: 5px;
+  padding-left: 5px;
+  font-size: 14px;
+}
+
+.salom {
+  --max-lines: 6;
+  --line-height: 1.4;
+  max-height: calc(var(--max-lines) * 1em * var(--line-height));
+  line-height: var(--line-height);
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  /* width: calc(50% - 24px); */
+}
+
+.btn-hot {
+  appearance: none;
+  border: 1px solid #ffffff;
+  border-radius: 0.255em;
+  cursor: pointer;
+  margin-top: 1rem;
+  background-color: #ffffff;
+  font-size: 15px;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+}
+
+.learn {
+  text-decoration: none;
+  color: rgb(216, 62, 216);
+}
+
+.learn:hover {
+  border-bottom: 1.5px solid rgb(211, 110, 211);
+}
+
+.link {
+  text-decoration: none;
+  display: inline-block;
 }
