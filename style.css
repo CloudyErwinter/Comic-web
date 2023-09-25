@@ -439,7 +439,7 @@ input:not(:placeholder-shown) ~ .reset {
 .current {
   display: flex;
   width: 100%;
-  margin-top: 60px;
+  margin-top: 10px;
   border-radius: 10px;
   background: #1b6fa8;
 }
@@ -712,6 +712,9 @@ input:not(:placeholder-shown) ~ .reset {
   justify-content: space-between;
   align-items: center;
   position: relative;
+  background: #1f1f1f;
+  margin: 60px 0 0;
+  border-radius: 10px;
 }
 .wrapper i {
   height: 50px;
@@ -739,43 +742,69 @@ input:not(:placeholder-shown) ~ .reset {
   margin: 10px;
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: calc((100% / 10) - 1px);
-  gap: 1px;
-  overflow: hidden;
+  grid-auto-columns: calc((100% / 9) - 0.5px);
+  gap: 0px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: 0;
 }
-
-.carousel :where(.card, .img) {
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .cards {
+  cursor: grab;
+  user-select: none;
+}
+.carousel :where(.cards, .img) {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .carousel .cards {
+  scroll-snap-align: start;
   list-style: none;
   align-items: center;
-  cursor: pointer;
   display: flex;
-  padding-bottom: 10px;
+  padding-top: 10px;
   justify-content: center;
   flex-direction: column;
 }
 
 .cards .img img {
   width: 134px;
-  height: 155px;
+  height: 195px;
   object-fit: cover;
 }
 .cards h2 {
-  font-weight: 500;
-  font-size: 1.3rem;
+  font-size: medium;
+  text-align: center;
+  width: 95%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #21429d;
 }
-.cards span {
-  color: #1f1f1f;
+
+.cards h2 a:hover {
+  color: #f4b333;
+  font-weight: 600;
+}
+.cards h2 a {
+  text-decoration: none;
+  color: #f1f1f1;
 }
 
 /* responsive */
 @media screen and (max-width: 900px) {
   .wrapper .carousel {
-    grid-auto-columns: calc((100% / 7) - 0.5px);
+    grid-auto-columns: calc((100% / 6) - 0.5px);
   }
 }
 @media screen and (max-width: 600px) {
@@ -783,6 +812,38 @@ input:not(:placeholder-shown) ~ .reset {
     grid-auto-columns: calc((100% / 4) - 1px);
   }
 }
+@media screen and (max-width: 500px) {
+  .wrapper {
+    display: none;
+  }
+}
+
+.details > p {
+  font-size: 0.8em;
+  margin-top: 0.2em;
+}
+
+.details > label {
+  font-weight: bold;
+}
+
+.details {
+  color: white;
+  /* box-shadow: 0 3px 10px rgb(193, 5, 5);  */
+  width: 135px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  /* height: 2.6rem;  */
+  transition: height 0.5s ease-in-out;
+  padding: 0.6em;
+  overflow: hidden;
+}
+
+.cardi:hover > .details {
+  /* height: 6.7em; */
+}
+
 /*
 .containerrr {
   overflow: auto;
