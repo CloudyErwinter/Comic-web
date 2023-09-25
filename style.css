@@ -488,10 +488,10 @@ input:not(:placeholder-shown) ~ .reset {
 .a {
   border: 2px solid;
   overflow: hidden;
-  margin: 58px auto;
+  margin: 56px auto;
   background: darkgray;
   padding: 10px;
-  min-height: 100vh;
+  min-height: 180vh;
 }
 .b {
   overflow: hidden;
@@ -518,8 +518,8 @@ input:not(:placeholder-shown) ~ .reset {
 }
 .Aa li a {
   margin-right: 5px;
-  background: #f1f1f1;
-  color: #333;
+  background: #ffffff;
+  color: #383636;
   border: 1px solid #ddd;
   padding: 4px;
   margin-bottom: 5px;
@@ -1086,4 +1086,94 @@ img {
 .link {
   text-decoration: none;
   display: inline-block;
+}
+
+.carddd-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.carddd {
+  width: 220px;
+  background-color: rgb(157, 163, 167);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+
+.carddd img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content3 {
+  padding: 16px;
+}
+.card-content3 h3 {
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+
+.card-content3 p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+.card-content3 .btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #666;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  color: #fff;
+}
+
+.carddd-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.carddd {
+  width: 220px;
+  background-color: rgb(199, 205, 208);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+
+.carddd img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content3 {
+  padding: 16px;
+}
+.card-content3 h3 {
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+
+.card-content3 p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+.card-content3 .btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #21429d;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  color: #fff;
 }
