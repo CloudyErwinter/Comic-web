@@ -368,7 +368,7 @@ input:not(:placeholder-shown) ~ .reset {
     max-width: 100%;
     text-align: left;
     margin-top: 7px;
-    padding-top: 15px;
+    /* padding-top: 15px; */
     white-space: normal;
   }
 
@@ -777,19 +777,21 @@ input:not(:placeholder-shown) ~ .reset {
   justify-content: center;
   flex-direction: column;
 }
-
+.cards {
+  background-color: #21429d;
+  width: 134px;
+  height: 213px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
 .cards .img img {
   width: 134px;
   height: 195px;
   object-fit: cover;
 }
 .cards h2 {
-  font-size: medium;
+  font-size: small;
   text-align: center;
-  min-width: 92%;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  background-color: #21429d;
 }
 
 .cards h2 a:hover {
@@ -804,7 +806,7 @@ input:not(:placeholder-shown) ~ .reset {
 /* responsive */
 @media screen and (max-width: 900px) {
   .wrapper .carousel {
-    grid-auto-columns: calc((100% / 6) - 0.5px);
+    grid-auto-columns: calc((100% / 5) - 0.5px);
   }
 }
 @media screen and (max-width: 600px) {
@@ -815,6 +817,9 @@ input:not(:placeholder-shown) ~ .reset {
 @media screen and (max-width: 500px) {
   .wrapper {
     display: none;
+  }
+  .current {
+    margin-top: 60px;
   }
 }
 
