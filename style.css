@@ -408,8 +408,10 @@ input:not(:placeholder-shown) ~ .reset {
   color: #fafcfc;
   background-color: #1f1f1f;
   border-radius: 10px;
-  padding: 10px;
+  padding: 8px;
   margin: 3px;
+  @media (min-width: 600px) {
+  }
   /* min-width: 100%; */
 }
 .box1 img {
